@@ -1,0 +1,16 @@
+{
+  "name": "@rendrjs/query",
+  "version": "0.0.7",
+  "description": "Official query hooks for Rendrjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "pub": "npm version patch && npx tsc && npm publish"
+  },
+  "peerDependencies": {
+    "@rendrjs/core": "^0.1.225"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
