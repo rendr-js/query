@@ -4,13 +4,18 @@
   "description": "Official query hooks for Rendrjs",
   "main": "dist/index.js",
   "scripts": {
-    "pub": "npm version patch && npx tsc && npm publish"
+    "pub": "npm version patch && npx tsc && npm publish",
+    "test": "vitest"
   },
   "peerDependencies": {
-    "@rendrjs/core": "^0.1.225"
+    "@rendrjs/core": "^0.2.48"
   },
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.1.6"
+    "@rendrjs/testing-library": "^0.0.28",
+    "jsdom": "^23.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.6",
+    "vitest": "^1.0.2"
   }
 }
