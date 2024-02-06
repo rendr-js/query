@@ -1,6 +1,4 @@
 import {
-  Dispatch,
-  SetStateAction,
   createAtom,
   useAtom,
   useAtomSetter,

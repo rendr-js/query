@@ -5,7 +5,7 @@ import { FetchInit, QueryResponse, api } from '.';
 
 const makeGetHook = <Input, Resp>(resp: (input: Input) => Resp, request: (input: Input) => string | FetchInit): [(input: Input) => QueryResponse<Resp>, Mock<[input: RequestInfo | URL, init?: RequestInit | undefined], Promise<Response>>] => {
   let res: Resp;
-  const fetch = (input: RequestInfo | URL, init?: RequestInit | undefined): Promise<Response> => {
+  const fetch = (_input: RequestInfo | URL, _init?: RequestInit | undefined): Promise<Response> => {
     const resp = JSON.stringify(res);
     return new Promise(r => setTimeout(() => r(new Response(resp)), 100));
   };
