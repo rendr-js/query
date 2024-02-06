@@ -4,7 +4,7 @@
   "description": "Official query hooks for Rendrjs",
   "main": "dist/index.js",
   "scripts": {
-    "pub": "npm version patch && npx tsc && npm publish",
+    "pub": "npm version patch && tsc && npm publish",
     "test": "vitest"
   },
   "peerDependencies": {
