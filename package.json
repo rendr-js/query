@@ -1,6 +1,6 @@
 {
   "name": "@rendrjs/query",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Official query hooks for Rendrjs",
   "main": "dist/index.js",
   "scripts": {
